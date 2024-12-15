@@ -62,35 +62,49 @@ public class Program
         Console.WriteLine("Input L2: " + LinkedListToString(l2));
         Console.WriteLine("Result: " + LinkedListToString(result));
         Console.WriteLine();
-    }
+    
 
-    // Utility to convert an array to a linked list
-    static Solution2.ListNode ConvertArrayToLinkedList(int[] arr)
-    {
-        Solution2.ListNode dummyHead = new Solution2.ListNode(0);
-        Solution2.ListNode current = dummyHead;
-        foreach (int val in arr)
+        // Utility to convert an array to a linked list
+        static Solution2.ListNode ConvertArrayToLinkedList(int[] arr)
         {
-            current.next = new Solution2.ListNode(val);
-            current = current.next;
+            Solution2.ListNode dummyHead = new Solution2.ListNode(0);
+            Solution2.ListNode current = dummyHead;
+            foreach (int val in arr)
+            {
+                current.next = new Solution2.ListNode(val);
+                current = current.next;
+            }
+            return dummyHead.next;
         }
-        return dummyHead.next;
-    }
 
-    // Utility to print a linked list as a string
-    static string LinkedListToString(Solution2.ListNode node)
-    {
-        if (node == null) return "null";
-        var result = new System.Text.StringBuilder();
-        while (node != null)
+        // Utility to print a linked list as a string
+        static string LinkedListToString(Solution2.ListNode node)
         {
-            result.Append(node.val);
-            if (node.next != null) result.Append(" -> ");
-            node = node.next;
+            if (node == null) return "null";
+            var result = new System.Text.StringBuilder();
+            while (node != null)
+            {
+                result.Append(node.val);
+                if (node.next != null) result.Append(" -> ");
+                node = node.next;
+            }
+            return result.ToString();
         }
-        return result.ToString();
+
+        #endregion
+
+
+        #region LeetCode3
+        Solution3 solution3 = new Solution3();
+
+        // Test cases
+        Console.WriteLine(solution3.LengthOfLongestSubstring("abcabcbb")); // Expected: 3
+        Console.WriteLine(solution3.LengthOfLongestSubstring("bbbbb"));    // Expected: 1
+        Console.WriteLine(solution3.LengthOfLongestSubstring("pwwkew"));   // Expected: 3
+        Console.WriteLine(solution3.LengthOfLongestSubstring(""));         // Expected: 0
+        Console.WriteLine(solution3.LengthOfLongestSubstring(" "));        // Expected: 1
+        Console.WriteLine(solution3.LengthOfLongestSubstring("au"));       // Expected: 2
+        Console.WriteLine(solution3.LengthOfLongestSubstring("dvdf"));     // Expected: 3
+        #endregion
     }
-
-
-    #endregion
 }
