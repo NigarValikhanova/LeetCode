@@ -106,5 +106,48 @@ public class Program
         Console.WriteLine(solution3.LengthOfLongestSubstring("au"));       // Expected: 2
         Console.WriteLine(solution3.LengthOfLongestSubstring("dvdf"));     // Expected: 3
         #endregion
+
+        #region LeetCode4
+
+        Solution4 solution4 = new Solution4();
+
+        // Test case 1
+        int[] nums4 = { 1, 3 };
+        int[] nums5 = { 2 };
+        Console.WriteLine("Test Case 1: " + solution4.FindMedianSortedArrays(nums4, nums5)); // Output: 2.0
+
+        // Test case 2
+        nums1 = new int[] { 1, 2 };
+        nums2 = new int[] { 3, 4 };
+        Console.WriteLine("Test Case 2: " + solution4.FindMedianSortedArrays(nums4, nums5)); // Output: 2.5
+
+        // Test case 3
+        nums1 = new int[] { 0, 0 };
+        nums2 = new int[] { 0, 0 };
+        Console.WriteLine("Test Case 3: " + solution4.FindMedianSortedArrays(nums4, nums5)); // Output: 0.0
+
+        // Test case 4
+        nums1 = new int[] { 1 };
+        nums2 = new int[] { 2, 3, 4 };
+        Console.WriteLine("Test Case 4: " + solution4.FindMedianSortedArrays(nums4, nums5)); // Output: 2.0
+
+        // Test case 5 (odd total length)
+        nums1 = new int[] { 1, 2, 3 };
+        nums2 = new int[] { 4, 5 };
+        Console.WriteLine("Test Case 5: " + solution4.FindMedianSortedArrays(nums4, nums5)); // Output: 3.0
+
+        // Test case 6 (empty array for nums1)
+        nums1 = new int[] { };
+        nums2 = new int[] { 1, 2, 3, 4, 5 };
+        Console.WriteLine("Test Case 6: " + solution4.FindMedianSortedArrays(nums4, nums5)); // Output: 3.0
+
+        // Test case 7 (empty array for nums2)
+        nums1 = new int[] { 1, 2, 3, 4, 5 };
+        nums2 = new int[] { };
+        Console.WriteLine("Test Case 7: " + solution4.FindMedianSortedArrays(nums4, nums5)); // Output: 3.0
+
+        #endregion
     }
 }
+
+
