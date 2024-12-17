@@ -93,7 +93,6 @@ public class Program
 
         #endregion
 
-
         #region LeetCode3
         Solution3 solution3 = new Solution3();
 
@@ -146,6 +145,12 @@ public class Program
         nums2 = new int[] { };
         Console.WriteLine("Test Case 7: " + solution4.FindMedianSortedArrays(nums4, nums5)); // Output: 3.0
 
+        #endregion
+
+        #region LeetCode5
+        Solution5 solution5 = new Solution5();
+        Console.WriteLine(solution5.LongestPalindrome("babad")); // Output: "bab" or "aba"
+        Console.WriteLine(solution5.LongestPalindrome("cbbd"));  // Output: "bb"
         #endregion
     }
 }
