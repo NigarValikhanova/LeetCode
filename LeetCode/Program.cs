@@ -152,6 +152,27 @@ public class Program
         Console.WriteLine(solution5.LongestPalindrome("babad")); // Output: "bab" or "aba"
         Console.WriteLine(solution5.LongestPalindrome("cbbd"));  // Output: "bb"
         #endregion
+
+        #region LeetCode6
+
+        Solution6 solution6 = new Solution6();
+
+        // Example 1
+        string s1 = "PAYPALISHIRING";
+        int numRows1 = 3;
+        Console.WriteLine(solution6.Convert(s1, numRows1)); // Output: "PAHNAPLSIIGYIR"
+
+        // Example 2
+        string s2 = "PAYPALISHIRING";
+        int numRows2 = 4;
+        Console.WriteLine(solution6.Convert(s2, numRows2)); // Output: "PINALSIGYAHRPI"
+
+        // Example 3
+        string s3 = "A";
+        int numRows3 = 1;
+        Console.WriteLine(solution6.Convert(s3, numRows3)); // Output: "A"
+
+        #endregion
     }
 }
 
