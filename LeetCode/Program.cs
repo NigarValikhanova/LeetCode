@@ -173,6 +173,16 @@ public class Program
         Console.WriteLine(solution6.Convert(s3, numRows3)); // Output: "A"
 
         #endregion
+
+        #region LeetCode7
+
+        Solution7 solution7 = new Solution7();
+
+        Console.WriteLine(solution7.Reverse(123));   // Output: 321
+        Console.WriteLine(solution7.Reverse(-123));  // Output: -321
+        Console.WriteLine(solution7.Reverse(120));   // Output: 21
+
+        #endregion
     }
 }
 
