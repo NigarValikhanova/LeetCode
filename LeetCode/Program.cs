@@ -183,6 +183,18 @@ public class Program
         Console.WriteLine(solution7.Reverse(120));   // Output: 21
 
         #endregion
+
+        #region
+
+        Solution8 solution8 = new Solution8();
+
+        Console.WriteLine(solution8.MyAtoi("42"));          // Output: 42
+        Console.WriteLine(solution8.MyAtoi(" -042"));       // Output: -42
+        Console.WriteLine(solution8.MyAtoi("1337c0d3"));    // Output: 1337
+        Console.WriteLine(solution8.MyAtoi("0-1"));         // Output: 0
+        Console.WriteLine(solution8.MyAtoi("words and 987")); // Output: 0
+
+        #endregion
     }
 }
 
