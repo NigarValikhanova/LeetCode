@@ -184,7 +184,7 @@ public class Program
 
         #endregion
 
-        #region
+        #region LeetCode8
 
         Solution8 solution8 = new Solution8();
 
@@ -193,6 +193,18 @@ public class Program
         Console.WriteLine(solution8.MyAtoi("1337c0d3"));    // Output: 1337
         Console.WriteLine(solution8.MyAtoi("0-1"));         // Output: 0
         Console.WriteLine(solution8.MyAtoi("words and 987")); // Output: 0
+
+        #endregion
+
+        #region LeetCode11
+
+        Solution11 solution11 = new Solution11();
+
+        int[] height1 = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+        Console.WriteLine("Max Area: " + solution11.MaxArea(height1)); // Output: 49
+
+        int[] height2 = { 1, 1 };
+        Console.WriteLine("Max Area: " + solution11.MaxArea(height2)); // Output: 1
 
         #endregion
     }
