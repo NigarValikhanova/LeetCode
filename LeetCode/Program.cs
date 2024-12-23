@@ -196,6 +196,51 @@ public class Program
 
         #endregion
 
+        #region LeetCode9
+
+        Solution9 solution9 = new Solution9();
+
+        // Test cases
+        int[] testCases = { 121, -121, 10, 0, 12321, 123, -101, 1001, 1221, 1234321 };
+
+        foreach (int testCase in testCases)
+        {
+            Console.WriteLine($"IsPalindrome({testCase}) = {solution9.IsPalindrome(testCase)}");
+        }
+
+        #endregion
+
+        #region LeetCode10
+
+        Solution10 solution10 = new Solution10();
+
+        // Test cases
+        var testCases10 = new (string s, string p, bool expected)[] {
+            ("aa", "a", false),           // Single character cannot match multiple characters
+            ("aa", "a*", true),          // '*' matches zero or more of the preceding character
+            ("ab", ".*", true),          // '.' matches any character, '*' matches multiple
+            ("aab", "c*a*b", true),      // 'c*' matches zero 'c', 'a*' matches two 'a's, 'b' matches
+            ("mississippi", "mis*is*p*.", false), // Complex pattern with '*' and '.'
+            ("", ".*", true),            // '.*' matches any string, including empty
+            ("", "a*", true),            // '*' can match zero preceding characters
+            ("", "", true),              // Empty string matches empty pattern
+            ("ab", ".*c", false),        // '.' and '*' match 'ab', but no 'c' follows
+            ("abc", "abc", true),        // Exact match
+            ("aaa", "a*a", true),        // '*' matches zero or more of 'a', still matches
+            ("a", "ab*", true),          // 'b*' matches zero 'b'
+            ("abcd", "d*", false),       // Pattern 'd*' cannot match the start of 'abcd'
+        };
+
+        // Run test cases
+        foreach (var (s, p, expected) in testCases10)
+        {
+            bool result10 = solution10.IsMatch(s, p);
+            Console.WriteLine($"IsMatch(\"{s}\", \"{p}\") = {result}, Expected = {expected}, Passed = {result10 == expected}");
+        }
+
+
+        #endregion
+
         #region LeetCode11
 
         Solution11 solution11 = new Solution11();
