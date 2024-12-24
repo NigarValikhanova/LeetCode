@@ -252,6 +252,16 @@ public class Program
         Console.WriteLine("Max Area: " + solution11.MaxArea(height2)); // Output: 1
 
         #endregion
+
+        #region LeetCode12
+
+        Solution12 solution12 = new Solution12();
+
+        Console.WriteLine(solution12.IntToRoman(3749)); // Output: "MMMDCCXLIX"
+        Console.WriteLine(solution12.IntToRoman(58));   // Output: "LVIII"
+        Console.WriteLine(solution12.IntToRoman(1994)); // Output: "MCMXCIV"
+
+        #endregion
     }
 }
 
