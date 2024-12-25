@@ -262,6 +262,18 @@ public class Program
         Console.WriteLine(solution12.IntToRoman(1994)); // Output: "MCMXCIV"
 
         #endregion
+
+        #region LeetCode13
+
+        Solution13 solution13 = new Solution13();
+
+        Console.WriteLine("Enter a Roman numeral:");
+        string input = Console.ReadLine();
+        int result13 = solution13.RomanToInt(input);
+        Console.WriteLine($"The integer value of {input} is: {result13}");
+
+
+        #endregion
     }
 }
 
