@@ -274,6 +274,20 @@ public class Program
 
 
         #endregion
+
+        #region LeetCode14
+
+        Solution14 solution14 = new Solution14();
+
+        string[] example14 = { "flower", "flow", "flight" };
+        string result14 = solution14.LongestCommonPrefix(example14);
+        Console.WriteLine(result14); // Output: "fl"
+
+        string[] example12 = { "dog", "racecar", "car" };
+        string result12 = solution14.LongestCommonPrefix(example12);
+        Console.WriteLine(result12); // Output: ""
+
+        #endregion
     }
 }
 
