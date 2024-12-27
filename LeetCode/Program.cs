@@ -62,7 +62,7 @@ public class Program
         Console.WriteLine("Input L2: " + LinkedListToString(l2));
         Console.WriteLine("Result: " + LinkedListToString(result));
         Console.WriteLine();
-    
+
 
         // Utility to convert an array to a linked list
         static Solution2.ListNode ConvertArrayToLinkedList(int[] arr)
@@ -288,7 +288,37 @@ public class Program
         Console.WriteLine(result12); // Output: ""
 
         #endregion
-    }
-}
 
+        #region LeetCode15
+
+        Solution15 solution15 = new Solution15();
+
+        int[] nums15 = { -1, 0, 1, 2, -1, -4 };
+        Console.WriteLine("Example 1:");
+        PrintResult(solution15.ThreeSum(nums15));
+
+        int[] nums152 = { 0, 1, 1 };
+        Console.WriteLine("Example 2:");
+        PrintResult(solution15.ThreeSum(nums152));
+
+        int[] nums153 = { 0, 0, 0 };
+        Console.WriteLine("Example 3:");
+        PrintResult(solution15.ThreeSum(nums153));
+
+        #endregion
+
+
+    }
+
+    #region LeetCode15 Method
+    private static void PrintResult(IList<IList<int>> result)
+    {
+        foreach (var triplet in result)
+        {
+            Console.WriteLine("[" + string.Join(", ", triplet) + "]");
+        }
+    }
+
+    #endregion
+}
 
