@@ -307,6 +307,23 @@ public class Program
 
         #endregion
 
+        #region LeetCode16
+
+        Solution16 solution16 = new Solution16();
+
+        // Example 1
+        int[] nums16 = { -1, 2, 1, -4 };
+        int target16 = 1;
+        Console.WriteLine(solution16.ThreeSumClosest(nums16, target16)); // Output: 2
+
+        // Example 2
+        int[] nums162 = { 0, 0, 0 };
+        int target162 = 1;
+        Console.WriteLine(solution16.ThreeSumClosest(nums162, target162)); // Output: 0
+
+
+        #endregion
+
 
     }
 
