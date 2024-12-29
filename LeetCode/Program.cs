@@ -324,6 +324,25 @@ public class Program
 
         #endregion
 
+        #region LeetCode17
+
+        Solution17 solution17 = new Solution17();
+
+        Console.WriteLine("Example 1:");
+        var output1 = solution17.LetterCombinations("23");
+        Console.WriteLine(string.Join(", ", output1));
+
+        Console.WriteLine("\nExample 2:");
+        var output2 = solution17.LetterCombinations("");
+        Console.WriteLine(string.Join(", ", output2));
+
+        Console.WriteLine("\nExample 3:");
+        var output3 = solution17.LetterCombinations("2");
+        Console.WriteLine(string.Join(", ", output3));
+
+
+        #endregion
+
 
     }
 
