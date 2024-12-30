@@ -361,7 +361,7 @@ public class Program
         {
             Console.WriteLine(string.Join(",", quad));
         }
-   } 
+
 
  } 
 
