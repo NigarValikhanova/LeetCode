@@ -343,8 +343,27 @@ public class Program
 
         #endregion
 
+        var solution18 = new Solution18();
+        int[] nums18 = { 1, 0, -1, 0, -2, 2 };
+        int target18 = 0;
+        var result18 = solution18.FourSum(nums18, target18);
+        Console.WriteLine("Example 1 Result:");
+        foreach (var quad in result18)
+        {
+            Console.WriteLine(string.Join(",", quad));
+        }
 
-    }
+        int[] nums182 = { 2, 2, 2, 2, 2 };
+        int target182 = 8;
+        var result182 = solution18.FourSum(nums182, target182);
+        Console.WriteLine("\nExample 2 Result:");
+        foreach (var quad in result182)
+        {
+            Console.WriteLine(string.Join(",", quad));
+        }
+   } 
+
+ } 
 
     #region LeetCode15 Method
     private static void PrintResult(IList<IList<int>> result)
