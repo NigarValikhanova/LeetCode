@@ -365,7 +365,40 @@ public class Program
         }
         #endregion
 
+        #region LeetCode19
 
+        void PrintList(ListNode node)
+        {
+            while (node != null)
+            {
+                Console.Write(node.val + " -> ");
+                node = node.next;
+            }
+            Console.WriteLine("null");
+        }
+
+
+        Solution19 solution19 = new Solution19();
+
+        // Example 1
+        ListNode head19_1 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+        int n1 = 2;
+        Console.WriteLine("Example 1:");
+        PrintList(solution19.RemoveNthFromEnd(head19_1, n1));
+
+        // Example 2
+        ListNode head19_2 = new ListNode(1);
+        int n2 = 1;
+        Console.WriteLine("Example 2:");
+        PrintList(solution19.RemoveNthFromEnd(head19_2, n2));
+
+        // Example 3
+        ListNode head19_3 = new ListNode(1, new ListNode(2));
+        int n3 = 1;
+        Console.WriteLine("Example 3:");
+        PrintList(solution19.RemoveNthFromEnd(head19_3, n3));
+
+        #endregion
 
     }
 
@@ -379,5 +412,7 @@ public class Program
     }
 
     #endregion
+
+
 }
 
