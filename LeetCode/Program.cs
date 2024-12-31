@@ -343,6 +343,8 @@ public class Program
 
         #endregion
 
+        #region LeetCode18
+
         var solution18 = new Solution18();
         int[] nums18 = { 1, 0, -1, 0, -2, 2 };
         int target18 = 0;
@@ -361,9 +363,11 @@ public class Program
         {
             Console.WriteLine(string.Join(",", quad));
         }
+        #endregion
 
 
- } 
+
+    }
 
     #region LeetCode15 Method
     private static void PrintResult(IList<IList<int>> result)
