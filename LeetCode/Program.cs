@@ -400,6 +400,17 @@ public class Program
 
         #endregion
 
+        #region LeetCode20
+
+        Solution20 solution20 = new Solution20();
+
+        Console.WriteLine(solution20.IsValid("()"));       // Output: true
+        Console.WriteLine(solution20.IsValid("()[]{}"));  // Output: true
+        Console.WriteLine(solution20.IsValid("(]"));      // Output: false
+        Console.WriteLine(solution20.IsValid("([])"));    // Output: true
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
