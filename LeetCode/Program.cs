@@ -411,6 +411,29 @@ public class Program
 
         #endregion
 
+        #region LeetCode21
+
+        Solution21 solution21 = new Solution21();
+
+        // Example 1
+        ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+        ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+        ListNode merged = solution21.MergeTwoLists(list1, list2);
+        PrintList(merged); // Output: 1 -> 1 -> 2 -> 3 -> 4 -> 4
+
+        // Example 2
+        ListNode empty1 = null;
+        ListNode empty2 = null;
+        merged = solution21.MergeTwoLists(empty1, empty2);
+        PrintList(merged); // Output: (empty)
+
+        // Example 3
+        ListNode single = new ListNode(0);
+        merged = solution21.MergeTwoLists(null, single);
+        PrintList(merged); // Output: 0
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
