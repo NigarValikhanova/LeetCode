@@ -434,6 +434,15 @@ public class Program
 
         #endregion
 
+        #region LeetCode22
+
+        Solution22 solution22 = new Solution22();
+        int n = 3;
+        IList<string> result22 = solution22.GenerateParenthesis(n);
+        Console.WriteLine(string.Join(", ", result22));
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
