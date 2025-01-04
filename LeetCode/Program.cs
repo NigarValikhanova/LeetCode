@@ -443,6 +443,37 @@ public class Program
 
         #endregion
 
+        #region LeetCode23
+
+        // Create test cases
+        ListNode[] lists = new ListNode[] {
+            CreateLinkedList(new int[] { 1, 4, 5 }),
+            CreateLinkedList(new int[] { 1, 3, 4 }),
+            CreateLinkedList(new int[] { 2, 6 })
+        };
+
+        // Create solution object
+        Solution23 solution23 = new Solution23();
+
+        // Run the MergeKLists method
+        ListNode result23 = solution23.MergeKLists(lists);
+
+        // Print the merged linked list
+        PrintLinkedList(result);
+
+        // Additional test cases
+        Console.WriteLine("Test Case 2: Empty list of lists");
+        ListNode[] emptyLists = new ListNode[] { };
+        result23 = solution23.MergeKLists(emptyLists);
+        PrintLinkedList(result); // Expected: (empty output)
+
+        Console.WriteLine("Test Case 3: Single empty list");
+        ListNode[] singleEmptyList = new ListNode[] { null };
+        result23 = solution23.MergeKLists(singleEmptyList);
+        PrintLinkedList(result); // Expected: (empty output)
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
@@ -456,6 +487,39 @@ public class Program
 
     #endregion
 
+    #region LeetCode23 Method
+
+    // Helper method to create a linked list from an array
+    public static ListNode CreateLinkedList(int[] values)
+    {
+        if (values == null || values.Length == 0) return null;
+        ListNode head = new ListNode(values[0]);
+        ListNode current = head;
+        for (int i = 1; i < values.Length; i++)
+        {
+            current.next = new ListNode(values[i]);
+            current = current.next;
+        }
+        return head;
+    }
+
+    // Helper method to print a linked list
+    public static void PrintLinkedList(ListNode head)
+    {
+        if (head == null)
+        {
+            Console.WriteLine("(empty)");
+            return;
+        }
+        while (head != null)
+        {
+            Console.Write(head.val + " -> ");
+            head = head.next;
+        }
+        Console.WriteLine("null");
+    }
+
+    #endregion
 
 }
 
