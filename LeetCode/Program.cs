@@ -474,6 +474,20 @@ public class Program
 
         #endregion
 
+        #region LeetCode24
+
+        // Example 1: Input: [1, 2, 3, 4]
+        int[] input24 = { 1, 2, 3, 4 };
+        ListNode head24 = CreateLinkedList(input24);
+
+        Solution24 solution24 = new Solution24();
+        ListNode swappedHead = solution24.SwapPairs(head24);
+
+        Console.WriteLine("Example 1:");
+        PrintLinkedList(swappedHead);
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
