@@ -488,6 +488,23 @@ public class Program
 
         #endregion
 
+        #region LeetCode25
+
+        // Create a sample linked list: 1 -> 2 -> 3 -> 4 -> 5
+        ListNode head25 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+
+        // Set the value of k
+        int k = 2;
+
+        // Create a Solution instance and call ReverseKGroup
+        Solution25 solution25 = new Solution25();
+        ListNode result25 = solution25.ReverseKGroup(head25, k);
+
+        // Print the result
+        PrintList(result);
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
