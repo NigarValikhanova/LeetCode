@@ -505,6 +505,26 @@ public class Program
 
         #endregion
 
+        #region LeetCode26
+
+        int[] nums = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+
+        // Instantiate the solution class and call the method
+        Solution26 solution26 = new Solution26();
+        int k26 = solution26.RemoveDuplicates(nums);
+
+        // Print the number of unique elements
+        Console.WriteLine("Number of unique elements: " + k26);
+
+        // Print the modified array
+        Console.WriteLine("Modified array with unique elements:");
+        for (int i = 0; i < k26; i++)
+        {
+            Console.Write(nums[i] + " ");
+        }
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
