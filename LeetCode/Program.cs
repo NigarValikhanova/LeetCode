@@ -525,6 +525,16 @@ public class Program
 
         #endregion
 
+        #region LeetCode27
+
+        int[] nums27 = { 3, 2, 2, 3 };
+        int val27 = 3;
+        Solution27 solution27 = new Solution27();
+        int result27 = solution27.RemoveElement(nums27, val27);
+        Console.WriteLine($"Result: {result27}, Updated Array: [{string.Join(", ", nums27[..result27])}]");
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
