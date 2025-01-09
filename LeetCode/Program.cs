@@ -535,6 +535,17 @@ public class Program
 
         #endregion
 
+        #region LeetCode28
+
+        Solution28 solution28 = new Solution28();
+
+        // Example 1
+        string haystack28 = "sadbutsad";
+        string needle28 = "sad";
+        Console.WriteLine(solution28.StrStr(haystack28, needle28)); // Output: 0
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
