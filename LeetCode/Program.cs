@@ -546,6 +546,16 @@ public class Program
 
         #endregion
 
+        #region LeetCode29
+
+        Solution29 solution29 = new Solution29();
+
+        Console.WriteLine(solution29.Divide(10, 3)); // Output: 3
+        Console.WriteLine(solution29.Divide(7, -3)); // Output: -2
+        Console.WriteLine(solution29.Divide(int.MinValue, -1)); // Output: 2147483647 (int.MaxValue)
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
