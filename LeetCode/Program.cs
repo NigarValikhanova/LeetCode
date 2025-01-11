@@ -556,6 +556,18 @@ public class Program
 
         #endregion
 
+        #region LeetCode30
+
+        Solution30 solution30 = new Solution30();
+
+        // Example 1
+        string s30 = "barfoothefoobarman";
+        string[] words30 = { "foo", "bar" };
+        var result30 = solution30.FindSubstring(s30, words30);
+        Console.WriteLine(string.Join(", ", result30)); // Output: [0, 9]
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
