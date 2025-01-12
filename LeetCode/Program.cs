@@ -568,6 +568,24 @@ public class Program
 
         #endregion
 
+        #region LeetCode31
+
+        Solution31 solution31 = new Solution31();
+
+        int[] nums31 = { 1, 2, 3 };
+        solution31.NextPermutation(nums31);
+        Console.WriteLine(string.Join(", ", nums31)); // Output: 1, 3, 2
+
+        int[] nums312 = { 3, 2, 1 };
+        solution31.NextPermutation(nums312);
+        Console.WriteLine(string.Join(", ", nums312)); // Output: 1, 2, 3
+
+        int[] nums313 = { 1, 1, 5 };
+        solution31.NextPermutation(nums313);
+        Console.WriteLine(string.Join(", ", nums313)); // Output: 1, 5, 1
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
