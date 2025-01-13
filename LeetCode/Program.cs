@@ -586,6 +586,16 @@ public class Program
 
         #endregion
 
+        #region LeetCode32
+
+        Solution32 solution32 = new Solution32();
+
+        Console.WriteLine(solution32.LongestValidParentheses("(()")); // Output: 2
+        Console.WriteLine(solution32.LongestValidParentheses(")()())")); // Output: 4
+        Console.WriteLine(solution32.LongestValidParentheses("")); // Output: 0
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
