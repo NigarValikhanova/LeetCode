@@ -596,6 +596,18 @@ public class Program
 
         #endregion
 
+        #region LeetCode33
+
+        int[] nums33 = { 4, 5, 6, 7, 0, 1, 2 };
+        int target33 = 0;
+
+        Solution33 solution33 = new Solution33();
+        int result33 = solution33.Search(nums33, target33);
+        Console.WriteLine(result33); // Output: 4
+
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
