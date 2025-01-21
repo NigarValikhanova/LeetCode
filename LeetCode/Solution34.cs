@@ -1,4 +1,4 @@
-public class Solution
+public class Solution34
 {
     public int[] SearchRange(int[] nums, int target)
     {
@@ -72,3 +72,4 @@ public class Solution
 
         return last;
     }
+}

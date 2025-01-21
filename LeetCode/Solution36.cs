@@ -1,4 +1,4 @@
-public class Solution
+public class Solution36
 {
     public bool IsValidSudoku(char[][] board)
     {
@@ -28,3 +28,4 @@ public class Solution
 
         return true;
     }
+}

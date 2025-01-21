@@ -1,4 +1,4 @@
-public class Solution
+public class Solution39
 {
     public IList<IList<int>> CombinationSum(int[] candidates, int target)
     {

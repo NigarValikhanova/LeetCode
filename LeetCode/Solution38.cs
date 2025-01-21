@@ -1,3 +1,5 @@
+using System.Text;
+
 public class Solution38
 {
     public string CountAndSay(int n)
@@ -24,3 +26,4 @@ public class Solution38
         result.Append(count).Append(prev[^1]); // Append the last group
         return result.ToString();
     }
+}
