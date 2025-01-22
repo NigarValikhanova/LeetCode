@@ -608,6 +608,23 @@ public class Program
 
         #endregion
 
+        #region LeetCode41
+
+        int[] nums41 = { 3, 4, -1, 1 };
+        int[] nums413 = { 7, 8, 9, 11, 12 };
+
+        Solution41 solution41 = new Solution41();
+
+        Console.WriteLine("Example 1:");
+        Console.WriteLine("Input: [3, 4, -1, 1]");
+        Console.WriteLine("Output: " + solution41.FirstMissingPositive(nums41)); // Expected output: 2
+
+        Console.WriteLine("\nExample 2:");
+        Console.WriteLine("Input: [7, 8, 9, 11, 12]");
+        Console.WriteLine("Output: " + solution41.FirstMissingPositive(nums413)); // Expected output: 1
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
