@@ -625,6 +625,20 @@ public class Program
 
         #endregion
 
+        #region LeetCode42
+
+        Solution42 solution42 = new Solution42();
+
+        // Example 1
+        int[] height42 = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+        Console.WriteLine("Water trapped: " + solution42.Trap(height42)); // Output: 6
+
+        // Example 2
+        int[] height422 = { 4, 2, 0, 3, 2, 5 };
+        Console.WriteLine("Water trapped: " + solution42.Trap(height422)); // Output: 9
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
