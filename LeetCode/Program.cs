@@ -639,6 +639,16 @@ public class Program
 
         #endregion
 
+        #region LeetCode43
+
+        Solution43 solution43 = new Solution43();
+        string num43 = "123";
+        string num432 = "456";
+        string result43 = solution43.Multiply(num43, num432);
+        Console.WriteLine($"The product of {num43} and {num432} is: {result43}");
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
