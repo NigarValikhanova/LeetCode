@@ -649,6 +649,19 @@ public class Program
 
         #endregion
 
+        #region LeetCode44
+
+        #endregion
+
+        #region LeetCode45
+
+        Solution45 solution45 = new Solution45();
+
+        int[] nums45 = { 2, 3, 1, 1, 4 };
+        Console.WriteLine(solution45.Jump(nums45)); // Output: 2
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
