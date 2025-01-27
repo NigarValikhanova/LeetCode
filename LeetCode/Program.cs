@@ -662,6 +662,21 @@ public class Program
 
         #endregion
 
+        #region LeetCode46
+
+        Solution46 solution46 = new Solution46();
+
+        int[] nums461 = { 1, 2, 3 };
+        Console.WriteLine("Permutations of [1, 2, 3]:");
+        PrintResult(solution46.Permute(nums461));
+
+        int[] nums462 = { 0, 1 };
+        Console.WriteLine("\nPermutations of [0, 1]:");
+        PrintResult(solution46.Permute(nums462));
+
+        #endregion
+
+
     }
 
     #region LeetCode15 Method
