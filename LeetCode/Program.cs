@@ -651,6 +651,8 @@ public class Program
 
         #region LeetCode44
 
+
+
         #endregion
 
         #region LeetCode45
@@ -673,6 +675,27 @@ public class Program
         int[] nums462 = { 0, 1 };
         Console.WriteLine("\nPermutations of [0, 1]:");
         PrintResult(solution46.Permute(nums462));
+
+        #endregion
+
+        #region LeetCode47
+
+        Solution47 solution47 = new Solution47();
+        var nums471 = new int[] { 1, 1, 2 };
+        var result471 = solution47.PermuteUnique(nums471);
+        Console.WriteLine("Unique permutations for [1, 1, 2]:");
+        foreach (var perm in result471)
+        {
+            Console.WriteLine("[" + string.Join(", ", perm) + "]");
+        }
+
+        var nums472 = new int[] { 1, 2, 3 };
+        var result472 = solution47.PermuteUnique(nums472);
+        Console.WriteLine("Unique permutations for [1, 2, 3]:");
+        foreach (var perm in result472)
+        {
+            Console.WriteLine("[" + string.Join(", ", perm) + "]");
+        }
 
         #endregion
 
