@@ -699,6 +699,25 @@ public class Program
 
         #endregion
 
+        #region LeetCode48
+
+        int[][] matrix = {
+            new int[] { 1, 2, 3 },
+            new int[] { 4, 5, 6 },
+            new int[] { 7, 8, 9 }
+        };
+
+        Console.WriteLine("Original Matrix:");
+        PrintMatrix(matrix);
+
+        Solution48 solution48 = new Solution48();
+        solution48.Rotate(matrix);
+
+        Console.WriteLine("Rotated Matrix:");
+        PrintMatrix(matrix);
+
+        #endregion
+
 
     }
 
@@ -745,6 +764,18 @@ public class Program
         Console.WriteLine("null");
     }
 
+    #endregion
+
+    #region LeetCode48 Method
+
+    static void PrintMatrix(int[][] matrix)
+    {
+        foreach (var row in matrix)
+        {
+            Console.WriteLine(string.Join(" ", row));
+        }
+        Console.WriteLine();
+    }
     #endregion
 
 }
