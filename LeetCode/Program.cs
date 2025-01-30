@@ -718,6 +718,17 @@ public class Program
 
         #endregion
 
+        #region LeetCode49
+
+        Solution49 solution49 = new Solution49();
+        string[] strs = { "eat", "tea", "tan", "ate", "nat", "bat" };
+        var result49 = solution49.GroupAnagrams(strs);
+
+        foreach (var group in result49)
+        {
+            Console.WriteLine("[" + string.Join(", ", group) + "]");
+        }
+        #endregion
 
     }
 
