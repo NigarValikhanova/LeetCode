@@ -730,6 +730,15 @@ public class Program
         }
         #endregion
 
+        #region LeetCode50
+
+        Solution50 solution50 = new Solution50();
+        Console.WriteLine(solution50.MyPow(2.00000, 10)); // Output: 1024.00000
+        Console.WriteLine(solution50.MyPow(2.10000, 3));  // Output: 9.26100
+        Console.WriteLine(solution50.MyPow(2.00000, -2)); // Output: 0.25000
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
