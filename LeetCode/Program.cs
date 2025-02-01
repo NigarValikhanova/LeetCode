@@ -739,6 +739,23 @@ public class Program
 
         #endregion
 
+        #region LeetCode51
+
+        int n51 = 4;
+        Solution51 solution51 = new Solution51();
+        var solutions = solution51.SolveNQueens(n51);
+
+        foreach (var solver in solutions)
+        {
+            foreach (var row in solver)
+            {
+                Console.WriteLine(row);
+            }
+            Console.WriteLine();
+        }
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
