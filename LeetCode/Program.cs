@@ -756,6 +756,15 @@ public class Program
 
         #endregion
 
+        #region LeetCode52
+
+
+        Solution52 solution52 = new Solution52();
+        int n52 = 4;
+        Console.WriteLine("Number of solutions for " + n52 + "-queens: " + solution52.TotalNQueens(n52));
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
