@@ -765,6 +765,21 @@ public class Program
 
         #endregion
 
+        #region LeetCode53
+
+        Solution53 solution53 = new Solution53();
+
+        int[] nums531 = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+        Console.WriteLine(solution53.MaxSubArray(nums531)); // Output: 6
+
+        int[] nums532 = { 1 };
+        Console.WriteLine(solution53.MaxSubArray(nums532)); // Output: 1
+
+        int[] nums533 = { 5, 4, -1, 7, 8 };
+        Console.WriteLine(solution53.MaxSubArray(nums533)); // Output: 23
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
