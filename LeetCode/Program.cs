@@ -780,6 +780,25 @@ public class Program
 
         #endregion
 
+        #region LeetCode54
+
+        Solution54 solution54 = new Solution54();
+        int[][] matrix541 = new int[][] {
+            new int[] {1, 2, 3},
+            new int[] {4, 5, 6},
+            new int[] {7, 8, 9}
+        };
+        Console.WriteLine(string.Join(", ", solution54.SpiralOrder(matrix541)));
+
+        int[][] matrix542 = new int[][] {
+            new int[] {1, 2, 3, 4},
+            new int[] {5, 6, 7, 8},
+            new int[] {9, 10, 11, 12}
+        };
+        Console.WriteLine(string.Join(", ", solution54.SpiralOrder(matrix542)));
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
