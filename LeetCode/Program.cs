@@ -799,6 +799,18 @@ public class Program
 
         #endregion
 
+        #region LeetCode55
+
+        Solution55 solution55 = new Solution55();
+
+        int[] nums551 = { 2, 3, 1, 1, 4 };
+        Console.WriteLine(solution55.CanJump(nums551)); // Output: True
+
+        int[] nums552 = { 3, 2, 1, 0, 4 };
+        Console.WriteLine(solution55.CanJump(nums552)); // Output: False
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
