@@ -811,6 +811,27 @@ public class Program
 
         #endregion
 
+        #region LeetCode56
+
+        Solution56 solution56 = new Solution56();
+
+        int[][] intervals56 = new int[][]
+        {
+            new int[] {1, 3},
+            new int[] {2, 6},
+            new int[] {8, 10},
+            new int[] {15, 18}
+        };
+
+        int[][] mergedIntervals56 = solution56.Merge(intervals56);
+
+        Console.WriteLine("Merged Intervals:");
+        foreach (var interval in mergedIntervals56)
+        {
+            Console.WriteLine($"[{interval[0]}, {interval[1]}]");
+        }
+        #endregion
+
     }
 
     #region LeetCode15 Method
