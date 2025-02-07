@@ -832,6 +832,24 @@ public class Program
         }
         #endregion
 
+        #region LeetCode57
+
+        Solution57 solution57 = new Solution57();
+
+        int[][] intervals571 = new int[][] { new int[] { 1, 3 }, new int[] { 6, 9 } };
+        int[] newInterval571 = new int[] { 2, 5 };
+
+        int[][] result571 = solution57.Insert(intervals571, newInterval571);
+        PrintIntervals57(result571); // Output: [[1,5],[6,9]]
+
+        int[][] intervals572 = new int[][] { new int[] { 1, 2 }, new int[] { 3, 5 }, new int[] { 6, 7 }, new int[] { 8, 10 }, new int[] { 12, 16 } };
+        int[] newInterval572 = new int[] { 4, 8 };
+
+        int[][] result572 = solution57.Insert(intervals572, newInterval572);
+        PrintIntervals57(result572); // Output: [[1,2],[3,10],[12,16]]
+
+        #endregion
+
     }
 
     #region LeetCode15 Method
@@ -891,5 +909,19 @@ public class Program
     }
     #endregion
 
+    #region LeetCode57 Method
+
+    static void PrintIntervals57(int[][] intervals)
+    {
+        Console.Write("[");
+        for (int i = 0; i < intervals.Length; i++)
+        {
+            Console.Write($"[{intervals[i][0]},{intervals[i][1]}]");
+            if (i < intervals.Length - 1) Console.Write(",");
+        }
+        Console.WriteLine("]");
+
+    }
+    #endregion
 }
 
