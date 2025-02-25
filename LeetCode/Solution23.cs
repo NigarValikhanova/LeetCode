@@ -1,5 +1,4 @@
-﻿using static LeetCode.Solution2;
-
+﻿
 namespace LeetCode
 {
     public class Solution23
