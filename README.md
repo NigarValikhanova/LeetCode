@@ -1,3 +1,1 @@
 # LeetCode
-
-Testing new algorithms
